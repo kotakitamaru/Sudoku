@@ -1,0 +1,71 @@
+.numpad-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    margin: 25px;
+}
+
+.numpad-wrapper button{
+    width: 7vh;
+    height: 7vh;
+    margin: 10px;
+    padding: 0;
+    background-color: #3A4750;
+    outline: none;
+    border: none;
+    color: #EEEEEE;
+    font: 4vh "Courier New";
+    transition: font-size 100ms, transform 100ms;
+    cursor: pointer;
+    box-shadow: 2px 1px 10px 1px rgba(0,0,0,70%);
+    border-radius: 5px;
+}
+
+.numpad-wrapper button:hover{
+    font-size: 5vh;
+    background-color: #464c54;
+    transform: scale(105%);
+}
+
+.numpad-wrapper button:active{
+    background-color: #464c54;
+    transform: scale(125%);
+    transition: transform 1ms;
+}
+
+.numpad-wrapper select{
+    height: 7vh;
+    margin-inline: 10px;
+    padding: 0;
+    width: auto;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: #3A4750;
+    outline: none;
+    border: none;
+    color: #EEEEEE;
+    font: 3vh 'Andale Mono', monospace;
+    cursor: pointer;
+    box-shadow: 2px 1px 10px 1px rgba(0,0,0,70%);
+    border-radius: 5px;
+    transition: font-size 100ms, transform 100ms;
+    text-align: center;
+    text-align-last: center;
+}
+
+.numpad-wrapper select:hover{
+    font-size: 3.5vh;
+    background-color: #464c54;
+    transform: scale(105%);
+}
+
+.numpad-wrapper option{
+    font-size: 2.5vh;
+    background-color: #464c54;
+    transform: scale(105%);
+    outline: none;
+    border: none;
+    text-align: center;
+    text-align-last: center;
+    cursor: pointer;
+}

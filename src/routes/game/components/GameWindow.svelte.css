@@ -1,0 +1,4 @@
+.game-canvas{
+    width: min(80vw,65vh);
+    height: min(80vw,65vh);
+}

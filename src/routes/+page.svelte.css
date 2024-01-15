@@ -1,0 +1,35 @@
+.home-page-wrapper{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.home-page-wrapper a{
+    text-decoration: none;
+    color: #EEEEEE;
+    font-size: 10vh;
+    margin: 20vh;
+    font-family: "Comic Sans MS", cursive;
+    flex-grow: 0;
+    max-height:10vh ;
+    transition: transform 300ms;
+}
+
+.home-page-wrapper a:hover{
+    animation: rotationAnim 500ms linear;
+    transform: scale(120%);
+}
+
+
+@keyframes rotationAnim {
+    0%{
+        transform: scaleX(100%);
+    }
+    50%{
+        transform: scaleX(300%);
+    }
+    100%{
+        transform: scaleX(100%) scale(120%);
+    }
+}
